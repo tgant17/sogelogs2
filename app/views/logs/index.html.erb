@@ -1,0 +1,12 @@
+<h1>Sogelogs2</h1>
+<%= link_to "New log", new_log_path %>
+<%= debug @logs %>
+<div id="logs">
+  <% @logs.each do |log| %>
+    <div>
+        <a href="/logs/<%= log.id %>">
+            <%= log.text %>
+        </a>
+    </div>
+  <% end %>
+</div>

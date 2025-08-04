@@ -1,0 +1,12 @@
+<h1>New Log</h1>
+
+<%= form_with model: @log do |form| %>
+  <div>
+    <%= form.label :text %>
+    <%= form.text_field :text %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
